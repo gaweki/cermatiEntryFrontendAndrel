@@ -1,0 +1,1 @@
+Just run with double click or drag to your browser tab 
