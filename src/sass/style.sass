@@ -1,0 +1,224 @@
+$blue:#007bc1
+$dark-blue: #004a75
+$orange: #ff8000
+$dark-orange: #cc6600
+$smoke-grey: #e5e5e5
+$smooth-grey: #f1f1f1
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video 
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  color: black
+
+body
+  font-family: Lato
+  box-sizing: border-box
+  position: relative
+
+#cookiesOutbox
+  background-color: $smooth-grey
+  padding: 20px 0px 10px
+  position: fixed
+  top: 0
+  z-index: 1
+  width: 100%
+  transition: top 1s
+
+  .cookies__container
+    max-width: 720px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    padding: 0 15px 
+
+  .cookies__paragraph
+    width: 540px
+    margin-bottom: 10px
+
+  .cookies__button
+    width: 70px
+
+  .cookies__words--a
+    color: $blue
+    
+  .cookies__cta
+    background-color: #006ab3
+    width: 70px
+    height: 37px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: white
+    border-radius: 5px 
+
+#pageHeaderContainer
+  text-align: center
+  background: url("../img/bgPageHeader.jpg") no-repeat 3% 17%
+  padding: 170px 0px
+  position: relative
+  color: white
+  margin-top: 78px
+  transition: margin-top 1s
+
+  .pageHeaderLogo
+    position: absolute
+    left: 20px
+    top: 20px
+    width: 45px
+
+  .pageHeaderTitle
+    font-weight: 400
+    margin-bottom: 5px
+    color: white
+
+  .pageHeaderSubTitle, .pageHeader__paragraph
+    color: white
+
+  .pageHeader__paragraph
+    margin: 15px 0px
+
+  .pageHeader__cta
+    border: 1px solid white
+    color: white
+    width: 200px
+    margin: 0 auto
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    border-radius: 3px
+    text-transform: uppercase
+    &:hover 
+      color: $dark-blue
+      background-color: white
+
+#highlightsContainer
+  padding: 60px 30px
+  background-color: $smoke-grey
+
+  .highlightsHeader__container
+    text-align: center 
+    margin-bottom: 60px
+
+  .highlightsHeader__title
+    margin-bottom: 20px
+    color: #363636
+
+  .highlightsHeader__subtitle, .highlight__item--paragraph, .highlight__item--title
+    color: #363636
+
+  .highlightsHeader__subtitle, .highlight__item--paragraph
+    line-height: 23px
+
+  .highlight__items-container
+    display: flex
+    flex-wrap: wrap
+
+  .highlight__item--container
+    border: 1px solid #c6c6c6
+    padding: 25px 20px
+    margin: 0px auto 25px
+
+  .highlight__item--title
+    margin-bottom: 15px
+    overflow: hidden
+    display: flex
+    justify-content: space-between
+    align-items: center
+    i 
+      float: right
+      color: #a9a9a9
+      font-size: 30px
+
+#footerContainer
+  background-color: #08002a
+  text-align: center
+  padding: 40px
+  .footer__text
+    color: white
+
+#newsletterContainer
+  position: fixed
+  left: 0
+  bottom: -207px
+  background-color: $blue
+  opacity: .9
+  max-width: 640px
+  padding: 0px
+  transition: all 1s
+
+  display: flex
+  align-items: center
+  width: 100%
+  justify-content: center
+
+  .newsletter__container--content
+    position: relative
+
+  #btnCloseNewsletter
+    position: absolute
+    right: -19px
+    top: -24px
+    cursor: pointer
+    i 
+      font-size: 12px
+      color: white
+
+  .newsletter__title
+    color: white
+    margin-bottom: 10px
+    
+  .newsletter__paragraph
+    color: white
+    margin-bottom: 10px
+    line-height: 22px
+
+  .newsletter__input
+    width: 426px
+    margin-right: 12px
+    border: none
+    outline: none
+    padding: 7px
+    border-radius: 2px
+    &::-webkit-input-placeholder 
+      color: #9f9fa3
+    
+    
+    &:-ms-input-placeholder  
+      color: #9f9fa3
+    
+    
+    &::placeholder 
+      color: #9f9fa3
+    
+
+  .newsletter__container--cta
+    display: flex
+    flex-wrap: wrap
+
+  .newsletter__cta
+    background-color: $orange
+    width: 100px
+    height: 27px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    color: white
+    border-radius: 3px
+  
+
+@media only screen and (min-width: 960px) 
+  .highlight__item--container
+    max-width: 25vw
+
+@media only screen and (max-width: 959px) and (min-width: 480px) 
+  .highlight__item--container
+    max-width: 30vw
+
+@media only screen and (max-width: 479px) 
+  .highlight__item--container
+    max-width: 80vw
